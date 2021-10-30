@@ -1,0 +1,79 @@
+@media (max-width: 975px) {
+  .menu-right {
+    display: none;
+  }
+  .menu-right-reponsive {
+    display: flex;
+  }
+  .menu-link-notify {
+    cursor: pointer;
+  }
+  .home_content {
+    z-index: 1;
+    left: 0;
+    width: 100%;
+  }
+  .sidebar {
+    z-index: 10;
+    transform: translateX(-100%);
+  }
+  .sidebar.active ~ .home_content {
+    left: 0;
+    width: 100%;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #btn {
+    display: none;
+  }
+  .sidebar #btns {
+    display: inline;
+  }
+
+  .sidebar {
+    width: 240px;
+  }
+  .sidebar .profile #log_out {
+    left: 88%;
+  }
+  .sidebar .profile #log_out {
+    background: none;
+  }
+  .sidebar .profile .profile_details {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .sidebar .profile-content .profile {
+    background: var(--bg-color);
+  }
+  .sidebar .link_name {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .sidebar ul li .tooltips {
+    display: none;
+  }
+  .sidebar #btns {
+    left: 90%;
+  }
+  .sidebar #btn {
+    left: 90%;
+  }
+  .sidebar .logo_content .logo {
+    opacity: 1;
+  }
+}
+@media (min-width: 975px) {
+  .sidebar.active {
+    transform: translateX(0%);
+  }
+}

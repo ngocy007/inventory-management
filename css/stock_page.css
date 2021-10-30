@@ -1,0 +1,131 @@
+.view-stock {
+  padding: 50px 60px;
+}
+.stock-table {
+  padding-top: 30px;
+  width: 100%;
+}
+.view-stock table,
+.view-stock th,
+.view-stock td {
+  border: 1px solid #ccc;
+}
+.view-stock table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.bxs-edit {
+  color: var(--main-color-2);
+  font-size: 23px;
+}
+.bx-trash {
+  font-size: 23px;
+  color: var(--notify);
+}
+.view-stock th {
+  font-size: 21.5px;
+  font-weight: 500;
+  height: 50px;
+  background-color: var(--main-color-2);
+}
+.view-stock th,
+.view-stock td {
+  height: 50px;
+  text-align: center;
+}
+.tbody {
+  overflow: auto;
+  height: 450px;
+  width : 100%;
+}
+.delete-row {
+  border-radius: 10px;
+  width: 400px;
+  height: 150px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.edit-row {
+  display: none;
+  border-radius: 10px;
+  width: 900px;
+  height: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.❤ {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.options {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.edit-row {
+  border: 1px solid #ccc;
+}
+
+.list-edit-item input {
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+.delete-row-confirm {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.overlay3 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.button-icon {
+  --ui-background: #5f50f1;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: white;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ui-background);
+  font-weight: bold;
+}

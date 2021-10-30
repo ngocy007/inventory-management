@@ -1,0 +1,125 @@
+.menu {
+  display: flex;
+  list-style: none;
+  background-color: var(--main-color-2);
+  padding: 25px 22px;
+}
+.menu-left {
+  margin-left: 20px;
+  flex-grow: 1;
+}
+.menu-title {
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.menu-title:hover {
+  color: var(--main-color);
+}
+.menu-right {
+  display: flex;
+}
+.menu-item {
+  margin-left: 40px;
+  font-size: 25px;
+  position: relative;
+}
+.menu-item:last-child {
+  margin-right: 50px;
+}
+.notify {
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  position: relative;
+}
+.bxs-bell::after {
+  content: "1";
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 16px;
+  background-color: var(--notify);
+  padding: 1.5px 5px;
+  border-radius: 3px;
+}
+.menu-link {
+  color: var(--secondary-color);
+}
+.menu-right-reponsive {
+  display: none;
+}
+.menu-link-notify {
+  margin-left: 40px;
+  font-size: 25px;
+  margin-right: 10px;
+  color: var(--secondary-color);
+}
+.notify-menu {
+  position: absolute;
+  left: calc(-500px + 55px);
+  top: 100%;
+  background-color: var(--bg-content-page);
+  border: black solid 1px;
+  width: 500px;
+  z-index: 100;
+  opacity: 0;
+  translate: all 0.5s ease;
+}
+.notify-menu.active {
+  opacity: 1;
+}
+.notify-menu-headr {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.bx-cog {
+  font-size: 34px;
+}
+.notify-menu-contant {
+  width: 100%;
+  height: 450px;
+  overflow-y: scroll;
+}
+.notify-menu-contant::-webkit-scrollbar {
+  width: 4px;
+}
+.notify-menu-contant-item {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 15px 20px 0px 20px;
+  border-top: black solid 1px;
+}
+.item-user {
+  height: 50px;
+  width: 20%;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.item-content {
+  width: 60%;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+.item-content-time {
+  font-size: 12px;
+  color: rgb(90, 90, 90);
+}
+.item-img {
+  margin-left: 10px;
+  width: 20%;
+  height: 50px;
+  background-color: red;
+}
+.notify-menu-contant-item:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0, 0.2);
+}

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tran chủ quảng lý kho hàng</title>
+  <meta name="description" content="webstore quản lí kho hàng">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--khai báo css-->
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/narbar.css">
+  <link rel="stylesheet" href="../css/mobile.css">
+  <link rel="stylesheet" href="../css/home_content.css">
+  <link rel="stylesheet" href="../css/stock_page.css">
+</head>
+
+<body id="body">
+
+  <div class="overlay" id="ov"></div>
+  <div class="overlay2" id="ov2"></div>
+  <div class="sidebar" id="sb">
+    <div class="logo_content">
+      <div class="logo">
+        <i class='bx bx-code-alt'></i>
+        <div class="logo_name">Nhóm 5</div>
+      </div>
+      <i class='bx bx-menu' id='btn'></i>
+      <i class='bx bx-menu' id='btns'></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Search..">
+        <span class="tooltips">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-dashboard'></i>
+          <span class="link_name">User</span>
+        </a>
+        <span class="tooltips">User</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-message-dots'></i>
+          <span class="link_name">Messenger</span>
+        </a>
+        <span class="tooltips">Messenger</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="link_name">Analyst</span>
+        </a>
+        <span class="tooltips">Analyst</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-folder'></i>
+          <span class="link_name">File Manager</span>
+        </a>
+        <span class="tooltips">File Manager</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-folder'></i>
+          <span class="link_name">Saved</span>
+        </a>
+        <span class="tooltips">Saved</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-heart'></i>
+          <span class="link_name">Order</span>
+        </a>
+        <span class="tooltips">Order</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-heart'></i>
+          <span class="link_name">Saved</span>
+        </a>
+        <span class="tooltips">Saved</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="link_name">Settings</span>
+        </a>
+        <span class="tooltips">Settings</span>
+      </li>
+    </ul>
+    <div class="profile-content">
+      <div class="profile">
+        <div class="profile_details">
+          <img src="/img/avata.jpg" alt="ảnh đại diẹn">
+          <div class="name_job">
+            <div class="name">Tên User</div>
+            <div class="job">Role</div>
+          </div>
+        </div>
+        <i class='bx bx-log-out' id="log_out"></i>
+      </div>
+    </div>
+  </div>
+  <div class="home_content" id="home_content">
+    <ul class="menu">
+      <!-- menu bên trái -->
+      <div class="menu-left">
+        <a href="#" class="menu-title">User</a>
+      </div>
+      <!-- menu ben phải -->
+      <div class="menu-right">
+        <li class="menu-item">
+          <a href="#" class="menu-link notify">
+            <i class='bx bxs-bell'></i>
+          </a>
+          <!-- hiện menu thông báo -->
+          <div class="notify-menu">
+            <div class="notify-menu-headr">
+              <h3>Notification</h3>
+              <i class='bx bx-cog'></i>
+            </div>
+            <div class="notify-menu-contant">
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <i class='bx bx-menu'></i>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <i class='bx bxs-user'></i>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <i class='bx bx-cog'></i>
+          </a>
+        </li>
+      </div>
+      <!-- reponsive  -->
+      <div class="menu-right-reponsive">
+        <a href="#" class="menu-link-notify">
+          <i class='bx bxs-chevron-left'></i>
+        </a>
+      </div>
+    </ul>
+
+
+
+    <!-- những phần còn lại code zô -->
+    <div class="view-stock">
+      <div class="table-header">
+        <h2>Stock</h2>
+      </div>
+      <div class="stock-table">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Price</th>
+              <th>Unit</th>
+              <th>Quantity</th>
+              <th>Date</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+              <td>Germany</td>
+              <td>Germany</td>
+              <td>Germany</td>
+              <td>Germany</td>
+              <td class="table-edit">
+                <a id="table-edit-button" href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td class="table-edit">
+                <a id="table-edit-button" href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td class="table-edit">
+                <a href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td class="table-edit">
+                <a id="table-edit-button" href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td class="table-edit">
+                <a id="table-edit-button" href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td class="table-edit">
+                <a href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td class="table-edit">
+                <a href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td class="table-edit">
+                <a href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td class="table-edit">
+                <a href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td class="table-edit">
+                <a href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td class="table-edit">
+                <a href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td class="table-edit">
+                <a href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td>Mexico</td>
+              <td class="table-edit">
+                <a href="#"><i class='bx bxs-edit'></i></a>
+                <a id="table-delete-button" href="#"><i class='bx bx-trash'></i></a>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+    </div>
+
+
+  </div>
+  <div id="overlay3" class="overlay3"></div>
+  <div id="delete-row" class="delete-row">
+    <h3>Bạn có chắc không?</h3>
+    <div class="delete-row-confirm">
+      <button id="delete-yes" class="button-icon" style="background-color: var(--notify);">
+        <span>Yes</span>
+      </button>
+      <button id="delete-no" class="button-icon" style="background-color: var(--main-color-2);">
+        <span>No</span>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="edit-row" id="edit-row">
+    <div class="name-edit">
+      <h2>Edit stock</h2>
+    </div>
+    <div class="❤">
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Day</span>
+        <input type="date" id="birthday" name="birthday">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <select name="" id="name">
+          <option value="volvo">kg</option>
+          <option value="saab">m</option>
+          <option value="saab">box</option>
+        </select>
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+
+    </div>
+    <div class="options">
+      <button id="delete-yes-option" class="button-icon option"
+        style="background-color: var(--notify);height: 35px; margin-right: 20px;">
+        <span>Yes</span>
+      </button>
+      <button id="delete-no-option" class="button-icon option"
+        style="background-color: var(--main-color-2); height: 35px;">
+        <span>No</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="../js/menusc.js" async defer></script>
+  <script src="../js/stock.js" async defer></script>
+
+</body>
+
+</html>
