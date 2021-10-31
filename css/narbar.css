@@ -63,10 +63,16 @@
   width: 500px;
   z-index: 100;
   opacity: 0;
-  translate: all 0.5s ease;
+  visibility: hidden;
+  translate: 0.5s linear;
+  pointer-events: none;
+  user-select: none;
 }
 .notify-menu.active {
+  pointer-events: auto;
+  user-select: auto;
   opacity: 1;
+  visibility: visible;
 }
 .notify-menu-headr {
   padding: 10px 20px;
