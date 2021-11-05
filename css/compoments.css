@@ -1,0 +1,46 @@
+.invoice-item{
+    background-color: var(--secondary-color);
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.invoice-form{
+    background-color: var(--bg-content-page);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 20px;
+    row-gap: 20px; 
+    grid-template-areas: 
+    "heading heading"
+    "body1 body1"
+    "body2 body2"
+    "footer footer";
+}
+
+.invoice-item:first-child{
+    grid-area: heading;
+}
+.invoice-item:nth-child(2){
+    grid-area: heading;
+}
+.invoice-item:nth-child(3){
+    grid-area: body1;
+}
+.invoice-item:nth-child(4){
+    grid-area: body1;
+}
+.invoice-item:nth-child(5){
+    grid-area: body2;
+}
+.invoice-item:nth-child(6){
+    grid-area: body2;
+}
+.invoice-item:nth-child(7){
+    grid-area: footer;
+}
+.invoice-item:nth-child(8){
+    grid-area: footer;
+}
+
