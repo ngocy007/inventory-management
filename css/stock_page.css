@@ -1,18 +1,82 @@
 .view-stock {
   padding: 50px 60px;
 }
-.stock-table {
-  padding-top: 30px;
+.view-stock-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stock-table-headr {
+  width: 100%;
+  height: 100px;
+}
+.stock-table-headr .table-tools {
+  height: 50%;
+}
+.stock-table-headr .table-title {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 2fr 1fr;
+  font-size: 20px;
+  background-color: var(--main-color-2);
+}
+.stock-table-headr .title {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+}
+.stock-table-body {
   width: 100%;
 }
-.view-stock table,
-.view-stock th,
-.view-stock td {
-  border: 1px solid #ccc;
-}
-.view-stock table {
+.stock-table-body .table-body {
+  height: 350px;
   width: 100%;
-  border-collapse: collapse;
+}
+.stock-table-body .row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 2fr 1fr;
+  font-size: 20px;
+  width: 100%;
+}
+.stock-table-body .row .title:last-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stock-table-body .title {
+  border: 1px solid;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stock-table-headr .table-foot {
+  width: 100%;
+}
+.pagination {
+  display: flex;
+  justify-content: end;
+  margin-right: 40px;
+}
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pagination a.active {
+  background-color: var(--main-color-2);
+  color: var(--secondary-color);
+  border-radius: 5px;
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
 }
 .bxs-edit {
   color: var(--main-color-2);
@@ -26,22 +90,7 @@
   height: 500px;
   overflow-y: scroll;
 }
-.view-stock th {
-  font-size: 21.5px;
-  font-weight: 500;
-  height: 50px;
-  background-color: var(--main-color-2);
-}
-.view-stock th,
-.view-stock td {
-  height: 50px;
-  text-align: center;
-}
-.tbody {
-  overflow: auto;
-  height: 450px;
-  width: 100%;
-}
+
 .delete-row {
   border-radius: 10px;
   width: 400px;
@@ -70,17 +119,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-.📑 tr {
-  display : flex;
-  width : 100%;
-}
-
-.📑 tr th{
- width : 100%; 
-}
-.📑 tr th:first-child {
-  width : 100px;
 }
 
 .❤ {
