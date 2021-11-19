@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Trang chủ quản lý kho hàng</title>
+  <title>Trang chủ quảng lý kho hàng</title>
   <meta name="description" content="webstore quản lí kho hàng">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../css/mobile.css">
   <link rel="stylesheet" href="../css/home_content.css">
   <link rel="stylesheet" href="../css/stock_page.css">
+  <link rel="stylesheet" href="../css/Management_invoi.css">
 </head>
 
 <body id="body">
@@ -47,11 +48,11 @@
         <span class="tooltips">User</span>
       </li>
       <li>
-        <a href="Management_Invoices.html">
+        <a href="#">
           <i class='bx bx-message-dots'></i>
-          <span class="link_name">Management Invoices</span>
+          <span class="link_name">Messenger</span>
         </a>
-        <span class="tooltips">Management Invoices</span>
+        <span class="tooltips">Messenger</span>
       </li>
       <li>
         <a href="#">
@@ -61,7 +62,7 @@
         <span class="tooltips">Analyst</span>
       </li>
       <li>
-        <a href="#">
+        <a href="../pages/stock.html">
           <i class='bx bx-folder'></i>
           <span class="link_name">File Manager</span>
         </a>
@@ -215,36 +216,119 @@
 
 
     <!-- những phần còn lại code zô -->
-    <div class="view-stock">
 
-      <div class="view-stock-table">
-        <div class="stock-table-headr">
-          <div class="table-tools">
+    <div class="home-layout">
 
+      <div class="management_invoi">
+        <div class="management_invoi_head">
+          <div class="management_invoi_title">
+            <h3>Income</h3>
+            <button type="button" class="add_button">ADD INVOICE</button>
           </div>
-          <div class="table-title">
-            <div class="title">Id</div>
-            <div class="title">Name</div>
-            <div class="title">Price</div>
-            <div class="title">Quantity</div>
-            <div class="title">Date</div>
-            <div class="title">Tool</div>
+          <div class="management_invoi_swap">
+            <ul>
+              <li>Invoice</li>
+              <li>Bill</li>
+            </ul>
           </div>
         </div>
-        <div class="stock-table-body">
-          <div class="table-body">
-            <div class="row">
-              <div class="title">1</div>
-              <div class="title">Ông nước</div>
-              <div class="title">200</div>
-              <div class="title">20</div>
-              <div class="title">11-12-2001</div>
-              <div class="title">
-                <a id="table-edit-button" href="#"><i style="font-size:25px;" class='bx bxs-edit'></i></a>
-                <a id="table-delete-button" href="#"><i style="font-size:25px;" class='bx bx-trash'></i></a>
-              </div>
-            </div>
+        <div class="management_invoi_body">
+          <div class="management_invoi_names">
+            <label class="container">
+              <input type="checkbox" checked="checked" class="checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+            <div class="management_invoi_name">Invoice</div>
+            <div class="management_invoi_name">Client</div>
+            <div class="management_invoi_name">Amount</div>
+            <div class="management_invoi_name">Date</div>
+            <div class="management_invoi_name">Type</div>
+            <div class="management_invoi_name">Status</div>
           </div>
+          <div class="management_invoi_items">
+            <label class="container">
+              <input type="checkbox" checked="checked" class="checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+            <div class="management_invoi_item">A01</div>
+            <div class="management_invoi_item">DropBox, Inc</div>
+            <div class="management_invoi_item">$15,000</div>
+            <div class="management_invoi_item">07/07/7777</div>
+            <div class="management_invoi_item">Recurring</div>
+            <div class="management_invoi_item">
+              <button type="button" class="button Over" id="">Over due</button>
+            </div>
+            <div class="dots_name"><i class='bx bx-dots-horizontal-rounded'></i></div>
+          </div>
+
+
+          <div class="management_invoi_items">
+            <label class="container">
+              <input type="checkbox" checked="checked" class="checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+            <div class="management_invoi_item">A01</div>
+            <div class="management_invoi_item">DropBox, Inc</div>
+            <div class="management_invoi_item">$15,000</div>
+            <div class="management_invoi_item">07/07/7777</div>
+            <div class="management_invoi_item">Recurring</div>
+            <div class="management_invoi_item">
+              <button type="button" class="button Pending" id="">Pending</button>
+            </div>
+            <div class="dots_name"><i class='bx bx-dots-horizontal-rounded'></i></div>
+          </div>
+          <div class="management_invoi_items">
+            <label class="container">
+              <input type="checkbox" checked="checked" class="checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+            <div class="management_invoi_item">A01</div>
+            <div class="management_invoi_item">DropBox, Inc</div>
+            <div class="management_invoi_item">$15,000</div>
+            <div class="management_invoi_item">07/07/7777</div>
+            <div class="management_invoi_item">Recurring</div>
+            <div class="management_invoi_item">
+              <button type="button" class="button Pending" id="">Pending</button>
+            </div>
+            <div class="dots_name"><i class='bx bx-dots-horizontal-rounded'></i></div>
+          </div>
+
+
+
+          <div class="management_invoi_items">
+            <label class="container">
+              <input type="checkbox" checked="checked" class="checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+            <div class="management_invoi_item">A01</div>
+            <div class="management_invoi_item">DropBox, Inc</div>
+            <div class="management_invoi_item">$15,000</div>
+            <div class="management_invoi_item">07/07/7777</div>
+            <div class="management_invoi_item">Recurring</div>
+            <div class="management_invoi_item">
+              <button type="button" class="button Queued" id="">Queued</button>
+            </div>
+            <div class="dots_name"><i class='bx bx-dots-horizontal-rounded'></i></div>
+          </div>
+          <div class="management_invoi_items">
+            <label class="container">
+              <input type="checkbox" checked="checked" class="checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+            <div class="management_invoi_item">A01</div>
+            <div class="management_invoi_item">DropBox, Inc</div>
+            <div class="management_invoi_item">$15,000</div>
+            <div class="management_invoi_item">07/07/7777</div>
+            <div class="management_invoi_item">Recurring</div>
+            <div class="management_invoi_item">
+              <button type="button" class="button Queued" id="">Queued</button>
+            </div>
+            <div class="dots_name"><i class='bx bx-dots-horizontal-rounded'></i></div>
+          </div>
+
+        </div>
+        <!-- footer bảng -->
+        <div class="management_invoi_footer">
           <div class="table-foot">
             <div class="pagination">
               <a href="#">&laquo;</a>
@@ -260,94 +344,20 @@
         </div>
       </div>
 
-    </div>
-
-
-  </div>
-  <div id="overlay3" class="overlay3"></div>
-  <div id="delete-row" class="delete-row">
-    <h3>Bạn có chắc không?</h3>
-    <div class="delete-row-confirm">
-      <button id="delete-yes" class="button-icon" style="background-color: var(--notify);">
-        <span>Yes</span>
-      </button>
-      <button id="delete-no" class="button-icon" style="background-color: var(--main-color-2);">
-        <span>No</span>
-      </button>
+      <!-- Footer -->
+      <div class="home-layout-item footer-item">
+        <div class="contact">
+          <a href="#" class="link">home</a>
+          <a href="#" class="link">company</a>
+          <a href="#" class="link">portfolio</a>
+          <a href="#" class="link">blog</a>
+        </div>
+        <div class="credit">2021 by Ý, Thọ, Đạt from Nhóm 5</div>
+      </div>
     </div>
 
   </div>
-
-  <div class="edit-row" id="edit-row">
-    <div class="name-edit">
-      <h2>Edit stock</h2>
-    </div>
-    <div class="❤">
-      <div class="list-edit-item">
-        <span class="">Name</span>
-        <input type="text">
-      </div>
-      <div class="list-edit-item">
-        <span class="">Day</span>
-        <input type="date" id="birthday" name="birthday">
-      </div>
-      <div class="list-edit-item">
-        <span class="">Name</span>
-        <input type="text">
-      </div>
-      <div class="list-edit-item">
-        <span class="">Name</span>
-        <select name="" id="name">
-          <option value="volvo">kg</option>
-          <option value="saab">m</option>
-          <option value="saab">box</option>
-        </select>
-      </div>
-      <div class="list-edit-item">
-        <span class="">Name</span>
-        <input type="text">
-      </div>
-      <div class="list-edit-item">
-        <span class="">Name</span>
-        <input type="text">
-      </div>
-      <div class="list-edit-item">
-        <span class="">Name</span>
-        <input type="text">
-      </div>
-      <div class="list-edit-item">
-        <span class="">Name</span>
-        <input type="text">
-      </div>
-      <div class="list-edit-item">
-        <span class="">Name</span>
-        <input type="text">
-      </div>
-      <div class="list-edit-item">
-        <span class="">Name</span>
-        <input type="text">
-      </div>
-      <div class="list-edit-item">
-        <span class="">Name</span>
-        <input type="text">
-      </div>
-
-    </div>
-    <div class="options">
-      <button id="delete-yes-option" class="button-icon option"
-        style="background-color: var(--notify);height: 35px; margin-right: 20px;">
-        <span>Yes</span>
-      </button>
-      <button id="delete-no-option" class="button-icon option"
-        style="background-color: var(--main-color-2); height: 35px;">
-        <span>No</span>
-      </button>
-    </div>
-  </div>
-
   <script src="../js/menusc.js" async defer></script>
-  <script src="../js/stock.js" async defer></script>
-
 </body>
 
 </html>
