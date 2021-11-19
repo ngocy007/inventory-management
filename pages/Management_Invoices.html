@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Trang chủ quảng lý kho hàng</title>
+  <meta name="description" content="webstore quản lí kho hàng">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--khai báo css-->
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/narbar.css">
+  <link rel="stylesheet" href="../css/mobile.css">
+  <link rel="stylesheet" href="../css/home_content.css">
+  <link rel="stylesheet" href="../css/stock_page.css">
+  <link rel="stylesheet" href="../css/Management_invoi.css">
+</head>
+
+<body id="body">
+
+  <div class="overlay" id="ov"></div>
+  <div class="overlay2" id="ov2"></div>
+  <div class="sidebar" id="sb">
+    <div class="logo_content">
+      <div class="logo">
+        <i class='bx bx-code-alt'></i>
+        <div class="logo_name">Nhóm 5</div>
+      </div>
+      <i class='bx bx-menu' id='btn'></i>
+      <i class='bx bx-menu' id='btns'></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Search..">
+        <span class="tooltips">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-dashboard'></i>
+          <span class="link_name">User</span>
+        </a>
+        <span class="tooltips">User</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-message-dots'></i>
+          <span class="link_name">Messenger</span>
+        </a>
+        <span class="tooltips">Messenger</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="link_name">Analyst</span>
+        </a>
+        <span class="tooltips">Analyst</span>
+      </li>
+      <li>
+        <a href="pages/stock.html">
+          <i class='bx bx-folder'></i>
+          <span class="link_name">File Manager</span>
+        </a>
+        <span class="tooltips">File Manager</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-folder'></i>
+          <span class="link_name">Saved</span>
+        </a>
+        <span class="tooltips">Saved</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-heart'></i>
+          <span class="link_name">Order</span>
+        </a>
+        <span class="tooltips">Order</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-heart'></i>
+          <span class="link_name">Saved</span>
+        </a>
+        <span class="tooltips">Saved</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="link_name">Settings</span>
+        </a>
+        <span class="tooltips">Settings</span>
+      </li>
+    </ul>
+    <div class="profile-content">
+      <div class="profile">
+        <div class="profile_details">
+          <img src="/img/avata.jpg" alt="ảnh đại diẹn">
+          <div class="name_job">
+            <div class="name">Tên User</div>
+            <div class="job">Role</div>
+          </div>
+        </div>
+        <i class='bx bx-log-out' id="log_out"></i>
+      </div>
+    </div>
+  </div>
+  <div class="home_content" id="home_content">
+    <ul class="menu">
+      <!-- menu bên trái -->
+      <div class="menu-left">
+        <a href="#" class="menu-title">User</a>
+      </div>
+      <!-- menu ben phải -->
+      <div class="menu-right">
+        <li class="menu-item">
+          <a href="#" class="menu-link notify">
+            <i class='bx bxs-bell'></i>
+          </a>
+          <!-- hiện menu thông báo -->
+          <div class="notify-menu">
+            <div class="notify-menu-headr">
+              <h3>Notification</h3>
+              <i class='bx bx-cog'></i>
+            </div>
+            <div class="notify-menu-contant">
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <i class='bx bx-menu'></i>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <i class='bx bxs-user'></i>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <i class='bx bx-cog'></i>
+          </a>
+        </li>
+      </div>
+      <!-- reponsive  -->
+      <div class="menu-right-reponsive">
+        <a href="#" class="menu-link-notify">
+          <i class='bx bxs-chevron-left'></i>
+        </a>
+      </div>
+    </ul>
+
+
+
+    <!-- những phần còn lại code zô -->
+
+    <div class="home-layout">
+
+      <div class="management_invoi">
+        <div class="management_invoi_head">
+          <div class="management_invoi_title">
+            <h3>Income</h3>
+            <button type="button" class="add_button">ADD INVOICE</button>
+          </div>
+          <div class="management_invoi_swap">
+            <ul>
+              <li>Invoice</li>
+              <li>Bill</li>
+            </ul>
+          </div>
+        </div>
+        <div class="management_invoi_body">
+          <div class="management_invoi_names">
+            <label class="container">
+              <input type="checkbox" checked="checked" class="checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+            <div class="management_invoi_name">Invoice</div>
+            <div class="management_invoi_name">Client</div>
+            <div class="management_invoi_name">Amount</div>
+            <div class="management_invoi_name">Date</div>
+            <div class="management_invoi_name">Type</div>
+            <div class="management_invoi_name">Status</div>
+          </div>
+          <div class="management_invoi_items">
+            <label class="container">
+              <input type="checkbox" checked="checked" class="checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+            <div class="management_invoi_item">A01</div>
+            <div class="management_invoi_item">DropBox, Inc</div>
+            <div class="management_invoi_item">$15,000</div>
+            <div class="management_invoi_item">07/07/7777</div>
+            <div class="management_invoi_item">Recurring</div>
+            <div class="management_invoi_item">
+              <button type="button" class="button Over" id="">Over due</button>
+            </div>
+            <div class="dots_name"><i class='bx bx-dots-horizontal-rounded'></i></div>
+          </div>
+
+
+          <div class="management_invoi_items">
+            <label class="container">
+              <input type="checkbox" checked="checked" class="checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+            <div class="management_invoi_item">A01</div>
+            <div class="management_invoi_item">DropBox, Inc</div>
+            <div class="management_invoi_item">$15,000</div>
+            <div class="management_invoi_item">07/07/7777</div>
+            <div class="management_invoi_item">Recurring</div>
+            <div class="management_invoi_item">
+              <button type="button" class="button Pending" id="">Pending</button>
+            </div>
+            <div class="dots_name"><i class='bx bx-dots-horizontal-rounded'></i></div>
+          </div>
+          <div class="management_invoi_items">
+            <label class="container">
+              <input type="checkbox" checked="checked" class="checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+            <div class="management_invoi_item">A01</div>
+            <div class="management_invoi_item">DropBox, Inc</div>
+            <div class="management_invoi_item">$15,000</div>
+            <div class="management_invoi_item">07/07/7777</div>
+            <div class="management_invoi_item">Recurring</div>
+            <div class="management_invoi_item">
+              <button type="button" class="button Pending" id="">Pending</button>
+            </div>
+            <div class="dots_name"><i class='bx bx-dots-horizontal-rounded'></i></div>
+          </div>
+
+
+
+          <div class="management_invoi_items">
+            <label class="container">
+              <input type="checkbox" checked="checked" class="checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+            <div class="management_invoi_item">A01</div>
+            <div class="management_invoi_item">DropBox, Inc</div>
+            <div class="management_invoi_item">$15,000</div>
+            <div class="management_invoi_item">07/07/7777</div>
+            <div class="management_invoi_item">Recurring</div>
+            <div class="management_invoi_item">
+              <button type="button" class="button Queued" id="">Queued</button>
+            </div>
+            <div class="dots_name"><i class='bx bx-dots-horizontal-rounded'></i></div>
+          </div>
+          <div class="management_invoi_items">
+            <label class="container">
+              <input type="checkbox" checked="checked" class="checkbox" id="">
+              <span class="checkmark"></span>
+            </label>
+            <div class="management_invoi_item">A01</div>
+            <div class="management_invoi_item">DropBox, Inc</div>
+            <div class="management_invoi_item">$15,000</div>
+            <div class="management_invoi_item">07/07/7777</div>
+            <div class="management_invoi_item">Recurring</div>
+            <div class="management_invoi_item">
+              <button type="button" class="button Queued" id="">Queued</button>
+            </div>
+            <div class="dots_name"><i class='bx bx-dots-horizontal-rounded'></i></div>
+          </div>
+
+        </div>
+        <!-- footer bảng -->
+        <div class="management_invoi_footer">
+          <div class="table-foot">
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">&raquo;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="home-layout-item footer-item">
+        <div class="contact">
+          <a href="#" class="link">home</a>
+          <a href="#" class="link">company</a>
+          <a href="#" class="link">portfolio</a>
+          <a href="#" class="link">blog</a>
+        </div>
+        <div class="credit">2021 by Ý, Thọ, Đạt from Nhóm 5</div>
+      </div>
+    </div>
+
+  </div>
+  <script src="../js/menusc.js" async defer></script>
+</body>
+
+</html>
