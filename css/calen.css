@@ -61,7 +61,6 @@
   position: relative;
   cursor: pointer;
   animation: to-top 1s forwards;
-  /* border-radius: 50%; */
 }
 
 /* đéo biêt sao loi */
@@ -152,7 +151,18 @@
 .month-list > div > div:hover {
   background-color: var(--main-color-2);
 }
-
+.calendar-day-hover :hover {
+  color: red;
+}
+.calendar-day-hover {
+  z-index: 10000;
+}
+.calendar-day-hover:hover {
+  color: var(--pink);
+}
+.calendar-day-hover {
+  z-index: 10000;
+}
 @keyframes to-top {
   0% {
     transform: translateY(100%);
@@ -163,3 +173,4 @@
     opacity: 1;
   }
 }
+

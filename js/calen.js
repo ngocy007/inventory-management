@@ -114,5 +114,3 @@ document.querySelector("#next-year").onclick = () => {
   ++curr_year.value;
   generateCalendar(curr_month.value, curr_year.value);
 };
-
-
