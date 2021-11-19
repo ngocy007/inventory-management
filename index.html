@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/narbar.css">
   <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/home_content.css">
+  <link rel="stylesheet" href="css/calen.css">
 </head>
 
 <body id="body">
@@ -281,7 +282,39 @@
         </div>
       </div>
       <!-- Calendar -->
-      <div class="home-layout-item table-item"></div>
+      <div class="home-layout-item table-item">
+
+        <div class="calendar">
+          <div class="calendar-header">
+            <span class="month-picker" id="month-picker">February</span>
+            <div class="year-picker">
+              <span class="year-change" id="prev-year">
+                <pre><</pre>
+              </span>
+              <span id="year">2021</span>
+              <span class="year-change" id="next-year">
+                <pre>></pre>
+              </span>
+            </div>
+          </div>
+          <div class="calendar-body" id="calendar-body">
+            <div class="calendar-week-day">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="calendar-days"></div>
+          </div>
+          <div class="calendar-footer">
+
+          </div>
+          <div class="month-list"></div>
+        </div>
+      </div>
       <!-- Activities -->
       <div class="home-layout-item activites-item">
         <h3>Activities</h3>
@@ -345,6 +378,7 @@
 
   </div>
   <script src="js/menusc.js" async defer></script>
+  <script src="js/calen.js" async defer></script>
 </body>
 
 </html>
