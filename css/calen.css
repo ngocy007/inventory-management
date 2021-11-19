@@ -11,8 +11,6 @@
   padding: 20px;
   position: relative;
   overflow: hidden;
-
-  /* transform: scale(1.25); */
 }
 
 .light .calendar {
