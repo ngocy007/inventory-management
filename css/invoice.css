@@ -1,0 +1,100 @@
+.invoice-form-head{
+    padding: 40px;
+}
+.invoice-form{
+  background-color: #F6F8FA;
+}
+.invoice-row{
+    display: flex;
+}
+.invoice-item input,
+.invoice-item select{
+  font-size: 16px;
+  background-color: #F6F8FA;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-bottom: 2px solid var(--main-color-2);
+}
+.invoice-item{
+    width: 50%;
+    padding: 20px 40px;
+}
+/* add item */
+.additem {
+  width: 100%;
+  height: 400px;
+
+}
+.additem .additem-body .warp-items {
+  overflow-y: scroll;
+  height: 70%;
+}
+.additem .additem-body {
+  counter-reset: stt;
+  height: 65%;
+}
+.additem .additem-body .titles {
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr;
+  padding: 25px 0;
+  place-items: center;
+  font-size: 16px;
+}
+.additem .additem-body .items {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr;
+  place-items: center;
+  border-radius: 4px;
+  padding: 10px 0;
+  counter-reset: unset;
+  position: relative;
+  margin-bottom: 10px;
+  background-color: var(--secondary-color);
+}
+.additem .additem-body .items::before {
+  counter-increment: stt;
+  content: " " counter(stt) " ";
+  position: absolute;
+  left: 21px;
+  top: 9px;
+}
+
+.additem .additem-body .items .item > input {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 20px;
+  border: none;
+  border-bottom: 2px solid var(--main-color-2);
+  padding-left: 5px;
+}
+.additem .additem-footer {
+  height: 15%;
+}
+.invoice-row-total{
+  flex-direction: column;
+  display: flex;
+  align-items: end;
+  text-align: right;
+}
+.options {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  padding: 20px 20px;
+}
+.button-icon {
+  --ui-background: #5f50f1;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: white;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ui-background);
+  font-weight: bold;
+}

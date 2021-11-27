@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="../css/narbar.css">
   <link rel="stylesheet" href="../css/mobile.css">
   <link rel="stylesheet" href="../css/home_content.css">
-  <link rel="stylesheet" href="../css/compoments.css">
+  <link rel="stylesheet" href="../css/invoice.css">
 </head>
 
 <body id="body">
@@ -212,49 +212,102 @@
     <!-- những phần còn lại code zô -->
     <!-- Form hoá đơn -->
     <div class="invoice-form">
-        <div class="invoice-item invoice-header">
-          <h1>Invoice</h1>
-          <form action="#">
-            <input type="text" placeholder="Job Description" id="job_description">
-          </form>
+        <div class="invoice-form-head">
+            <h1>New invoice</h1>
         </div>
-        <div class="invoice-item invoice-header">
-          <p>logo</p>
+        <div class="invoice-row">
+            <div class="invoice-item invoice-date">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="invoice-item invoice-employee">
+                <label for="cars">Employee:</label><br>
+                <select name="cars" id="cars">
+                    <option value="">Chọn nhân viên</option>
+                    <option value="1">Thọ</option>
+                    <option value="2">Đạt</option>
+                    <option value="3">Ý</option>
+             </select>
+            </div>
         </div>
-        <!-- bill from -->
-        <div class="invoice-item bill-from">
-          <form action="#">
-            <label for="fname">Bill from:</label><br>
-            <input type="text" placeholder="Your Company Name" id="company_name"><br>
-            <input type="text" placeholder="Your Company Address" id="company_address"><br>
-            <input type="email" placeholder="Email" id="email"><br>
-            <input type="number" placeholder="Phone number" id="phone_number"><br>
-            <label for="currency"><i class='bx bx-money'></i> Currency: </label>
-            <select name="currency" id="currency" required>
-              <option value="USD">USD $</option>
-              <option value="VND">VND đ</option>
-            </select>
-          </form>
+        <div class="invoice-row">
+            <div class="invoice-item invoice-customer-id">
+                <label for="customer-id">Customer id:</label>
+                <input type="text" id="customer-id" name="customer-id">
+            </div>
+            <div class="invoice-item invoice-customer-name">
+                <label for="customer-name">Customer name:</label>
+                <input disabled type="text" id="customer-name" name="customer-name">
+            </div>
         </div>
-        <!-- bill to -->
-        <div class="invoice-item bill-to">
-          <form action="#">
-            <label for="fname">Bill to:</label><br>
-            <input type="text" placeholder="Customer Company" id="customer_company"><br>
-            <input type="text" placeholder="Customer Company Address" id="customer_address"><br>
-            <input type="email" placeholder="Customer Email" id="customer_email"><br>
-            <input type="number" placeholder="Customer Phone number" id="customer_phone_number"><br>
-
-          </form>
+        <div class="invoice-row">
+            <div class="invoice-item invoice-customer-phone">
+                <label for="customer-phone">Customer phone:</label>
+                <input disabled type="number" id="customer-phone" name="customer-phone">
+            </div>
+            <div class="invoice-item invoice-customer-gender">
+                <label for="customer-gender">Customer gender:</label><br>
+                <select name="customer-gender" id="customer-gender">
+                    <option value="">Choice gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Don't say</option>
+             </select>
+            </div>
         </div>
-        <div class="invoice-item bill-task"></div>
-        <div class="invoice-item bill-cost"></div>
-        <div class="invoice-item bill-footer"></div>
-        <div class="invoice-item bill-footer"></div>
+        <div class="invoice-additem">
+            <div class="invoice-item additem">
+                <div class="additem-body">
+                    <div class="titles">
+                        <div class="title"> STT </div>
+                        <div class="title"> MAHH </div>
+                        <div class="title"> Số lượng </div>
+                        <div class="title"> Giá </div>
+                    </div>
+                    <div class="warp-items">
+                        <div class="items">
+                            <div class="item"></div>
+                            <div class="item">
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="item">
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="item">
+                                <input type="number" name="" id="">
+                            </div>
+                        </div>
+                        <div class="addsym">
+                            <i class='bx bx-plus'></i> <span>ADD LINE</span>
+                        </div>
+                  </div>
+        </div>
+        
+        <div class="invoice-row-total">
+            <!-- invoice total -->
+            <div class="invoice-item invoice-subtotal">
+                <span>Subtotal: </span><span id="subtotal">1</span>
+            </div>
+            <div class="invoice-item invoice-total">
+                <span>Total: </span><span id="total">1</span>
+            </div>
+        </div>
+        <div class="invoice-row">
+            <div class="options">
+                <button id="cancel-option" class="button-icon option"
+                  style="background-color: var(--main-color-2); height: 35px;">
+                  <span>CANCEL</span>
+                </button>
+                <button id="approve-option" class="button-icon option"
+                  style="background-color: var(--notify);height: 35px; margin-left: 20px;">
+                  <span>APPROVE</span>
+                </button>
+              </div>
+        </div>
     </div>
-    
-  </div>
   <script src="../js/menusc.js" async defer></script>
+  <script src="../js/invoice.js" async defer></script>
+
 </body>
 
 </html>
