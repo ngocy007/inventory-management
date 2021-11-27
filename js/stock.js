@@ -9,6 +9,27 @@ var no_option = document.getElementById("delete-no-option");
 var yes_option = document.getElementById("delete-yes-option");
 var add_goods = document.getElementById("add_goods");
 var additem = document.querySelector(".additem");
+var addsym = document.querySelector(".addsym");
+
+addsym.onclick = function () {
+  var items = document.createElement("div");
+  items.className = "items";
+  items.innerHTML =
+    '<div class="item"></div>\
+          <div class="item">\
+            <input type="text" name="" id="">\
+          </div>\
+          <div class="item">\
+            <input type="text" name="" id="">\
+          </div>\
+          <div class="item">\
+            <input type="text" name="" id="">\
+          </div>\
+          <div class="item">\
+            <input type="date" value="1111-11-11" name="" id="">\
+          </div>';
+  addsym.before(items);
+};
 
 add_goods.onclick = function () {
   overlay3.style.display = "block";
