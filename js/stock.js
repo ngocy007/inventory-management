@@ -11,6 +11,7 @@ var add_goods = document.getElementById("add_goods");
 var additem = document.querySelector(".additem");
 var addsym = document.querySelector(".addsym");
 var warp_items = document.querySelector(".warp-items");
+var additem_delete_no = document.getElementById("additem-delete-no");
 
 addsym.onclick = function () {
   var items = document.createElement("div");
@@ -70,4 +71,8 @@ no_option.onclick = function () {
 yes_option.onclick = function () {
   overlay3.style.display = "none";
   table_edit.style.display = "none";
+};
+additem_delete_no.onclick = function () {
+  overlay3.style.display = "none";
+  additem.style.display = "none";
 };
