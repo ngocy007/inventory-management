@@ -38,7 +38,6 @@ addsym.onclick = function () {
 };
 
 
-
 add_goods.onclick = function () {
   overlay3.style.display = "block";
   additem.style.display = "block";
