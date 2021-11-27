@@ -183,8 +183,6 @@
                 <div class="item-img">
                 </div>
               </div>
-
-
             </div>
           </div>
         </li>
@@ -212,22 +210,50 @@
       </div>
     </ul>
 
-
-
     <!-- những phần còn lại code zô -->
     <!-- Form hoá đơn -->
     <div class="invoice-form">
-        <div class="invoice-item invoice-header"></div>
-        <div class="invoice-item invoice-header"></div>
-        <div class="invoice-item bill-from"></div>
-        <div class="invoice-item bill-to"></div>
+        <div class="invoice-item invoice-header">
+          <h1>Invoice</h1>
+          <form action="#">
+            <input type="text" placeholder="Job Description" id="job_description">
+          </form>
+        </div>
+        <div class="invoice-item invoice-header">
+          <p>logo</p>
+        </div>
+        <!-- bill from -->
+        <div class="invoice-item bill-from">
+          <form action="#">
+            <label for="fname">Bill from:</label><br>
+            <input type="text" placeholder="Your Company Name" id="company_name"><br>
+            <input type="text" placeholder="Your Company Address" id="company_address"><br>
+            <input type="email" placeholder="Email" id="email"><br>
+            <input type="number" placeholder="Phone number" id="phone_number"><br>
+            <label for="currency"><i class='bx bx-money'></i> Currency: </label>
+            <select name="currency" id="currency" required>
+              <option value="USD">USD $</option>
+              <option value="VND">VND đ</option>
+            </select>
+          </form>
+        </div>
+        <!-- bill to -->
+        <div class="invoice-item bill-to">
+          <form action="#">
+            <label for="fname">Bill to:</label><br>
+            <input type="text" placeholder="Customer Company" id="customer_company"><br>
+            <input type="text" placeholder="Customer Company Address" id="customer_address"><br>
+            <input type="email" placeholder="Customer Email" id="customer_email"><br>
+            <input type="number" placeholder="Customer Phone number" id="customer_phone_number"><br>
+
+          </form>
+        </div>
         <div class="invoice-item bill-task"></div>
         <div class="invoice-item bill-cost"></div>
         <div class="invoice-item bill-footer"></div>
         <div class="invoice-item bill-footer"></div>
     </div>
     
-
   </div>
   <script src="../js/menusc.js" async defer></script>
 </body>

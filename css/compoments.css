@@ -1,46 +1,115 @@
 .invoice-item{
     background-color: var(--secondary-color);
-    height: 400px;
-    width: 100%;
-    overflow: hidden;
 }
 
 .invoice-form{
     background-color: var(--bg-content-page);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 110px auto 200px 100px;
     padding: 20px;
-    row-gap: 20px; 
+    row-gap: 2px; 
     grid-template-areas: 
-    "heading heading"
-    "body1 body1"
-    "body2 body2"
-    "footer footer";
+    "heading1 heading2"
+    "body1 body2"
+    "body3 body4"
+    "footer1 footer2";
 }
 
 .invoice-item:first-child{
-    grid-area: heading;
+    grid-area: heading1;
+    padding: 10px;
 }
+.invoice-item:first-child h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.invoice-item:first-child form input[type="text"]{
+    width: 70%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--bg-content-page);
+}
+
 .invoice-item:nth-child(2){
-    grid-area: heading;
+    grid-area: heading2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* bill from */
 .invoice-item:nth-child(3){
     grid-area: body1;
+    padding: 9px;
+
 }
+.invoice-item:nth-child(3) input[type="number"]::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+.invoice-item:nth-child(3) form{
+    padding: 50px 0 50px 0;
+}
+.invoice-item:nth-child(3) form input{
+    margin: 7px 0 7px 0;
+    width: 70%;
+    padding: 9px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--bg-content-page);
+}
+#company_address{
+    padding: 20px 10px 20px 10px;
+    line-height: 28px;
+}
+.bx-money{
+    font-size: 100%;
+}
+#currency{
+    width: 90px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--bg-content-page);
+}
+/* bill to */
 .invoice-item:nth-child(4){
-    grid-area: body1;
+    grid-area: body2;
+    padding: 9px;
+}
+.invoice-item:nth-child(4) form{
+    padding: 50px 0 50px 0;
+}
+.invoice-item:nth-child(4) form input{
+    margin: 7px 0 7px 0;
+    width: 70%;
+    padding: 9px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--bg-content-page);
+}
+#customer_address{
+    padding: 20px 10px 20px 10px;
+    line-height: 28px;
 }
 .invoice-item:nth-child(5){
-    grid-area: body2;
+    grid-area: body3;
 }
 .invoice-item:nth-child(6){
-    grid-area: body2;
+    grid-area: body4;
 }
 .invoice-item:nth-child(7){
-    grid-area: footer;
+    grid-area: footer1;
 }
-.invoice-item:nth-child(8){
-    grid-area: footer;
+.invoice-item:last-child{
+    grid-area: footer2;
 }
 
