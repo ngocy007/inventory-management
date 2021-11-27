@@ -142,7 +142,7 @@
   color: #717274;
 }
 .additem .additem-body .warp-items {
-  overflow-y: scroll;
+  overflow-x: scroll;
   height: 70%;
 }
 .additem .additem-body .items {
@@ -187,7 +187,7 @@
 }
 .additem .additem-body .items .item:last-child > .bx-trash {
   position: absolute;
-  right: -30%;
+  right: -30px;
   top: -2px;
   cursor: pointer;
 }
