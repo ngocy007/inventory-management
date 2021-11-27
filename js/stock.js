@@ -12,7 +12,7 @@ var additem = document.querySelector(".additem");
 var addsym = document.querySelector(".addsym");
 var warp_items = document.querySelector(".warp-items");
 var additem_delete_no = document.getElementById("additem-delete-no");
-
+var dele_bx;
 addsym.onclick = function () {
   var items = document.createElement("div");
   items.className = "items";
@@ -33,7 +33,11 @@ addsym.onclick = function () {
           </div>';
   addsym.before(items);
   warp_items.scrollTop = warp_items.scrollHeight;
+  dele_bx = document.querySelectorAll(".additem .additem-body .items");
+  console.log(dele_bx);
 };
+
+
 
 add_goods.onclick = function () {
   overlay3.style.display = "block";
