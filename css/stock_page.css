@@ -9,7 +9,31 @@
 }
 .stock-table-headr {
   width: 100%;
-  height: 100px;
+  height: min-content;
+}
+.table-tools {
+  background-color: var(--main-color-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+.table-tools h3 {
+  font-size: 30px;
+  font-weight: 100;
+  color: var(--bg-content-page);
+}
+.table-tools .add_button {
+  font-size: 16px;
+  color: var(--secondary-color);
+  background-color: #04589c;
+  border: 1px solid #04589c;
+  padding: 5px;
+  cursor: pointer;
+}
+.table-tools .add_button:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
 }
 .stock-table-headr .table-tools {
   height: 50%;
@@ -90,7 +114,60 @@
   height: 500px;
   overflow-y: scroll;
 }
+.additem {
+  width: 900px;
+  height: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+.additem h4 {
+  text-align: center;
+  font-size: 30px;
+  height: 20%;
+}
+.additem .additem-body {
+  counter-reset: stt;
+  height: 65%;
+}
+.additem .additem-body .titles {
+  display: grid;
+  grid-template-columns: 1fr 2fr 5fr 1fr 3fr;
+  padding: 25px 0;
+  place-items: center;
+  font-size: 16px;
+  color: #717274;
+}
+.additem .additem-body .items {
+  display: grid;
+  grid-template-columns: 1fr 2fr 5fr 1fr 3fr;
+  place-items: center;
+  border: 1px solid;
+  padding: 10px 0;
+  counter-reset: unset;
+  position: relative;
+  margin-bottom: 10px;
+}
+.additem .additem-body .items::before {
+  counter-increment: stt;
+  content: " " counter(stt) " ";
+  position: absolute;
+  left: 21px;
+  top: 9px;
+}
 
+.additem .additem-body .items .item > input {
+  width: 100%;
+  height: 20px;
+  border-radius: 4px;
+  padding-left: 5px;
+}
+.additem .additem-footer {
+  height: 15%;
+}
 .delete-row {
   border-radius: 10px;
   width: 400px;

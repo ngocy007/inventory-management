@@ -67,7 +67,7 @@ generateCalendar = (month, year) => {
       if (
         i - first_day.getDay() + 1 === currDate.getDate() &&
         year === currDate.getFullYear() &&
-        month === currDate.getMonth()
+        month === currDate.getMonth() 
       ) {
         day.classList.add("curr-date");
       }
