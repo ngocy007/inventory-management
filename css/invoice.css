@@ -3,6 +3,14 @@
 }
 .invoice-form{
   background-color: #F6F8FA;
+  display: none;
+  z-index: 999;
+  width: 50%;
+  height: 60%;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -100%);
 }
 .invoice-row{
     display: flex;
@@ -23,7 +31,8 @@
 /* add item */
 .additem {
   width: 100%;
-  height: 400px;
+  height: 300px;
+  background-color: #F6F8FA;
 
 }
 .additem .additem-body .warp-items {
@@ -32,7 +41,7 @@
 }
 .additem .additem-body {
   counter-reset: stt;
-  height: 65%;
+  height: 100%;
 }
 .additem .additem-body .titles {
   text-transform: uppercase;
@@ -69,9 +78,7 @@
   border-bottom: 2px solid var(--main-color-2);
   padding-left: 5px;
 }
-.additem .additem-footer {
-  height: 15%;
-}
+
 .invoice-row-total{
   flex-direction: column;
   display: flex;
@@ -97,4 +104,16 @@
   justify-content: center;
   background-color: var(--ui-background);
   font-weight: bold;
+}
+.overlay3 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
