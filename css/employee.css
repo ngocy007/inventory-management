@@ -1,132 +1,132 @@
 .home-layout {
-    display: block;
-  }
-  .management_invoi {
-    height: 600px;
-    width: 100%;
-  }
-  .management_invoi_head {
-    color: var(--bg-content-page);
-    background-color: var(--main-color-2);
-    padding: 0 50px;
-    padding-top: 30px;
-  }
-  .management_invoi_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 30px;
-  }
-  .management_invoi_title h3 {
-    font-size: 30px;
-    font-weight: 100;
-  }
-  .management_invoi_title .add_button {
-    font-size: 16px;
-    color: var(--secondary-color);
-    background-color: #04589c;
-    border: 1px solid #04589c;
-    padding: 5px;
-    cursor: pointer;
-  }
-  .management_invoi_title .add_button:hover {
-    background-color: var(--secondary-color);
-    color: var(--main-color);
-  }
-  .management_invoi_swap ul {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
-  .management_invoi_swap ul {
-    list-style: none;
-  }
-  .management_invoi_swap li {
-    font-size: 16px;
-  }
-  .management_invoi_swap li:nth-child(1) {
-    border-bottom: 2px solid #e98080;
-  }
-  .management_invoi_swap li {
-    margin-right: 20px;
-    padding-bottom: 3px;
-  }
-  .management_invoi_body {
-    padding: 0 50px;
-  }
-  .management_invoi_names {
-    display: grid;
-    grid-template-columns: 1fr 3fr 5fr 2fr 3fr 6fr 3fr 4fr 3fr 3fr;
-    padding: 25px 0;
-    place-items: center;
-    font-size: 16px;
-    color: #717274;
-  }
-  .management_invoi_items {
-    background-color: var(--secondary-color);
-    display: grid;
-    grid-template-columns: 1fr 3fr 5fr 2fr 3fr 6fr 3fr 4fr 3fr 3fr;
-    padding: 15px 0;
-    place-items: center;
-    border: 1px solid var(--hover-background);
-    margin-bottom: 10px;
-    border-radius: 6px;
-    font-size: 16px;
-  }
-  .checkbox {
-    height: 15px;
-    width: 15px;
-  }
-  .management_invoi_items .button {
-    padding: 5px 25px;
-    border-radius: 12px;
-    color: var(--secondary-color);
-    border: none;
-  }
-  .dots_name {
-    cursor: pointer;
-  }
-  .Over {
-    background-color: #e96665;
-  }
-  .Pending {
-    background-color: #ffc06d;
-  }
-  .Queued {
-    background-color: #8c8ef1;
-  }
-  .management_invoi_footer {
-    margin-top: 30px;
-  }
-  .additem {
-    width: 900px;
-    height: 490px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255);
-    display: none;
-  }
-  .additem h4 {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 30px;
-    height: 10%;
-  }
-  .invoice-row{
-    display: flex;
+  display: block;
+}
+.management_invoi {
+  height: 600px;
+  width: 100%;
+}
+.management_invoi_head {
+  color: var(--bg-content-page);
+  background-color: var(--main-color-2);
+  padding: 0 50px;
+  padding-top: 30px;
+}
+.management_invoi_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.management_invoi_title h3 {
+  font-size: 30px;
+  font-weight: 100;
+}
+.management_invoi_title .add_button {
+  font-size: 16px;
+  color: var(--secondary-color);
+  background-color: #04589c;
+  border: 1px solid #04589c;
+  padding: 5px;
+  cursor: pointer;
+}
+.management_invoi_title .add_button:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+.management_invoi_swap ul {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.management_invoi_swap ul {
+  list-style: none;
+}
+.management_invoi_swap li {
+  font-size: 16px;
+}
+.management_invoi_swap li:nth-child(1) {
+  border-bottom: 2px solid #e98080;
+}
+.management_invoi_swap li {
+  margin-right: 20px;
+  padding-bottom: 3px;
+}
+.management_invoi_body {
+  padding: 0 50px;
+}
+.management_invoi_names {
+  display: grid;
+  grid-template-columns: 1fr 3fr 5fr 2fr 3fr 6fr 3fr 4fr 3fr 3fr;
+  padding: 25px 0;
+  place-items: center;
+  font-size: 16px;
+  color: #717274;
+}
+.management_invoi_items {
+  background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: 1fr 3fr 5fr 2fr 3fr 6fr 3fr 4fr 3fr 3fr;
+  padding: 15px 0;
+  place-items: center;
+  border: 1px solid var(--hover-background);
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.checkbox {
+  height: 15px;
+  width: 15px;
+}
+.management_invoi_items .button {
+  padding: 5px 25px;
+  border-radius: 12px;
+  color: var(--secondary-color);
+  border: none;
+}
+.dots_name {
+  cursor: pointer;
+}
+.Over {
+  background-color: #e96665;
+}
+.Pending {
+  background-color: #ffc06d;
+}
+.Queued {
+  background-color: #8c8ef1;
+}
+.management_invoi_footer {
+  margin-top: 30px;
+}
+.additem {
+  width: 900px;
+  height: 490px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+.additem h4 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  height: 10%;
+}
+.invoice-row {
+  display: flex;
 }
 .invoice-item input,
-.invoice-item select{
+.invoice-item select {
   font-size: 16px;
-  background-color: #F6F8FA;
+  background-color: #f6f8fa;
   border: none;
   outline: none;
   width: 100%;
   border-bottom: 2px solid var(--main-color-2);
 }
-.invoice-item{
-    width: 50%;
-    padding: 20px 40px;
+.invoice-item {
+  width: 50%;
+  padding: 20px 40px;
 }
