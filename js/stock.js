@@ -10,6 +10,7 @@ var yes_option = document.getElementById("delete-yes-option");
 var add_goods = document.getElementById("add_goods");
 var additem = document.querySelector(".additem");
 var addsym = document.querySelector(".addsym");
+var warp_items = document.querySelector(".warp-items");
 
 addsym.onclick = function () {
   var items = document.createElement("div");
@@ -27,8 +28,10 @@ addsym.onclick = function () {
           </div>\
           <div class="item">\
             <input type="date" value="1111-11-11" name="" id="">\
+            <i style="font-size:25px;" class="bx bx-trash">\
           </div>';
   addsym.before(items);
+  warp_items.scrollTop = warp_items.scrollHeight;
 };
 
 add_goods.onclick = function () {
@@ -49,6 +52,7 @@ overlay3.onclick = function () {
 delete_no.onclick = function () {
   overlay3.style.display = "none";
   delete_row.style.display = "none";
+  console.log("123");
 };
 delete_yes.onclick = function () {
   overlay3.style.display = "none";
