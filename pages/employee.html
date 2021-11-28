@@ -36,73 +36,73 @@
         </div>
         <ul class="nav_list">
             <li>
-              <i class='bx bx-search'></i>
-              <input type="text" placeholder="Search..">
-              <span class="tooltips">Search</span>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search..">
+                <span class="tooltips">Search</span>
             </li>
             <!-- trang chu -->
             <li>
-              <a href="../index.html">
-                <i class='bx bxs-dashboard'></i>
-                <span class="link_name">Dashboard</span>
-              </a>
-              <span class="tooltips">Dashboard</span>
+                <a href="../index.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <span class="tooltips">Dashboard</span>
             </li>
             <!-- Quản lý hoá đơn -->
             <li>
-              <a href="../pages/Management_Invoices.html">
-                <i class='bx bx-list-ol'></i>
-                <span class="link_name">Invoices</span>
-              </a>
-              <span class="tooltips">Invoices</span>
+                <a href="../pages/Management_Invoices.html">
+                    <i class='bx bx-list-ol'></i>
+                    <span class="link_name">Invoices</span>
+                </a>
+                <span class="tooltips">Invoices</span>
             </li>
             <!-- Nhà cung cấp -->
             <li>
-              <a href="../pages/supplier.html">
-                <i class='bx bxs-store-alt'></i>
-                <span class="link_name">Supplier</span>
-              </a>
-              <span class="tooltips">Supplier</span>
+                <a href="../pages/supplier.html">
+                    <i class='bx bxs-store-alt'></i>
+                    <span class="link_name">Supplier</span>
+                </a>
+                <span class="tooltips">Supplier</span>
             </li>
             <!-- Kho hàng -->
             <li>
-              <a href="../pages/stock.html">
-                <i class='bx bxs-data'></i>
-                <span class="link_name">Stock</span>
-              </a>
-              <span class="tooltips">Stock</span>
+                <a href="../pages/stock.html">
+                    <i class='bx bxs-data'></i>
+                    <span class="link_name">Stock</span>
+                </a>
+                <span class="tooltips">Stock</span>
             </li>
             <!-- báo cáo -->
             <li>
-              <a href="../pages/report.html">
-                <i class='bx bxs-report' ></i>
-                <span class="link_name">Report</span>
-              </a>
-              <span class="tooltips">Report</span>
+                <a href="../pages/report.html">
+                    <i class='bx bxs-report'></i>
+                    <span class="link_name">Report</span>
+                </a>
+                <span class="tooltips">Report</span>
             </li>
             <!-- nhân viên -->
             <li>
-              <a href="../pages/employee.html">
-                <i class='bx bxs-face' ></i>
-                <span class="link_name">Employee</span>
-              </a>
-              <span class="tooltips">Employee</span>
+                <a href="../pages/employee.html">
+                    <i class='bx bxs-face'></i>
+                    <span class="link_name">Employee</span>
+                </a>
+                <span class="tooltips">Employee</span>
             </li>
             <li>
-              <a href="#">
-                <i class='bx bx-heart'></i>
-                <span class="link_name">Saved</span>
-              </a>
-              <span class="tooltips">Saved</span>
+                <a href="#">
+                    <i class='bx bx-heart'></i>
+                    <span class="link_name">Saved</span>
+                </a>
+                <span class="tooltips">Saved</span>
             </li>
             <li>
-              <a href="#">
-                <i class='bx bx-cog'></i>
-                <span class="link_name">Settings</span>
-              </a>
-              <span class="tooltips">Settings</span>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name">Settings</span>
+                </a>
+                <span class="tooltips">Settings</span>
             </li>
-          </ul>
+        </ul>
         <div class="profile-content">
             <div class="profile">
                 <div class="profile_details">
@@ -218,7 +218,7 @@
                 <div class="management_invoi_head">
                     <div class="management_invoi_title">
                         <h3>Employee list</h3>
-                        <button type="button" class="add_button">ADD Employee</button>
+                        <button type="button" class="add_button" id="add_employ">ADD Employee</button>
                     </div>
                 </div>
                 <div class="management_invoi_body">
@@ -234,6 +234,7 @@
                         <div class="management_invoi_name">salary</div>
                         <div class="management_invoi_name">Edit</div>
                     </div>
+
                     <div class="management_invoi_items">
                         <div class="management_invoi_item">1</div>
                         <div class="management_invoi_item">A01</div>
@@ -246,82 +247,13 @@
                         <div class="management_invoi_item">Lao công</div>
                         <div class="management_invoi_item">6.000.000</div>
                         <div class="title">
-                            <a id="table-edit-button" href="#">
-                                <i style="font-size:25px;" class='bx bxs-edit'></i>
+                            <a id="table-edit-button ">
+                                <i style="font-size:25px;" class='bx bxs-edit edit_button'></i>
                             </a>
-                            <a id="table-delete-button" href="#">
-                                <i style="font-size:25px;" class='bx bx-trash'></i>
+                            <a id="table-delete-button ">
+                                <i style="font-size:25px;" class='bx bx-trash del_button'></i>
                             </a>
-                            <a id="table-delete-button" href="#">
-                                <i style="font-size:25px;" class='bx bx-history'></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="management_invoi_items">
-                        <div class="management_invoi_item">1</div>
-                        <div class="management_invoi_item">A01</div>
-                        <div class="management_invoi_item">Nguyễn Phan Hữu Thọ</div>
-                        <div class="management_invoi_item">Nam</div>
-                        <div class="management_invoi_item">14/08/2001</div>
-                        <div class="management_invoi_item">62 Mai Xuân Thưởng, phường Vĩnh Hòa, thành phố Nha Trang
-                        </div>
-                        <div class="management_invoi_item">0941443974</div>
-                        <div class="management_invoi_item">Lao công</div>
-                        <div class="management_invoi_item">6.000.000</div>
-                        <div class="title">
-                            <a id="table-edit-button" href="#">
-                                <i style="font-size:25px;" class='bx bxs-edit'></i>
-                            </a>
-                            <a id="table-delete-button" href="#">
-                                <i style="font-size:25px;" class='bx bx-trash'></i>
-                            </a>
-                            <a id="table-delete-button" href="#">
-                                <i style="font-size:25px;" class='bx bx-history'></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="management_invoi_items">
-                        <div class="management_invoi_item">1</div>
-                        <div class="management_invoi_item">A01</div>
-                        <div class="management_invoi_item">Nguyễn Phan Hữu Thọ</div>
-                        <div class="management_invoi_item">Nam</div>
-                        <div class="management_invoi_item">14/08/2001</div>
-                        <div class="management_invoi_item">62 Mai Xuân Thưởng, phường Vĩnh Hòa, thành phố Nha Trang
-                        </div>
-                        <div class="management_invoi_item">0941443974</div>
-                        <div class="management_invoi_item">Lao công</div>
-                        <div class="management_invoi_item">6.000.000</div>
-                        <div class="title">
-                            <a id="table-edit-button" href="#">
-                                <i style="font-size:25px;" class='bx bxs-edit'></i>
-                            </a>
-                            <a id="table-delete-button" href="#">
-                                <i style="font-size:25px;" class='bx bx-trash'></i>
-                            </a>
-                            <a id="table-delete-button" href="#">
-                                <i style="font-size:25px;" class='bx bx-history'></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="management_invoi_items">
-                        <div class="management_invoi_item">1</div>
-                        <div class="management_invoi_item">A01</div>
-                        <div class="management_invoi_item">Nguyễn Phan Hữu Thọ</div>
-                        <div class="management_invoi_item">Nam</div>
-                        <div class="management_invoi_item">14/08/2001</div>
-                        <div class="management_invoi_item">62 Mai Xuân Thưởng, phường Vĩnh Hòa, thành phố Nha Trang
-                        </div>
-                        <div class="management_invoi_item">0941443974</div>
-                        <div class="management_invoi_item">Lao công</div>
-                        <div class="management_invoi_item">6.000.000</div>
-                        <div class="title">
-                            <a id="table-edit-button" href="#">
-                                <i style="font-size:25px;" class='bx bxs-edit'></i>
-                            </a>
-                            <a id="table-delete-button" href="#">
-                                <i style="font-size:25px;" class='bx bx-trash'></i>
-                            </a>
-                            <a id="table-delete-button" href="#">
+                            <a id="table-delete-button">
                                 <i style="font-size:25px;" class='bx bx-history'></i>
                             </a>
                         </div>
@@ -504,7 +436,7 @@
     </div>
 
     <script src="../js/menusc.js" async defer></script>
-    <script src="../js/stock.js" async defer></script>
+    <script src="../js/addely.js" async defer></script>
 </body>
 
 </html>

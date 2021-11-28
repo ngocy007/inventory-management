@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 body {
   position: relative;
@@ -53,4 +52,10 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   background: #888;
+}
+.edit_button {
+  cursor: pointer;
+}
+.del_button {
+  cursor: pointer;
 }

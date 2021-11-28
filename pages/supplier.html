@@ -75,7 +75,7 @@
       <!-- báo cáo -->
       <li>
         <a href="../pages/report.html">
-          <i class='bx bxs-report' ></i>
+          <i class='bx bxs-report'></i>
           <span class="link_name">Report</span>
         </a>
         <span class="tooltips">Report</span>
@@ -83,7 +83,7 @@
       <!-- nhân viên -->
       <li>
         <a href="../pages/employee.html">
-          <i class='bx bxs-face' ></i>
+          <i class='bx bxs-face'></i>
           <span class="link_name">Employee</span>
         </a>
         <span class="tooltips">Employee</span>
@@ -229,7 +229,7 @@
         <div class="management_invoi_head">
           <div class="management_invoi_title">
             <h3>SUPPLIERS</h3>
-            <button type="button" class="add_button">ADD Supplier</button>
+            <button type="button" class="add_button" id="add_sup">ADD Supplier</button>
           </div>
         </div>
         <div class="management_invoi_body">
@@ -248,12 +248,18 @@
             <div class="management_invoi_item">62 Mai Xuân Thưởng, phường Vĩnh Hòa, thành phố Nha Trang</div>
             <div class="management_invoi_item">0941443974</div>
             <div class="title">
-                <a id="table-edit-button" href="#"><i style="font-size:25px;" class='bx bxs-edit'></i></a>
-                <a id="table-delete-button" href="#"><i style="font-size:25px;" class='bx bx-trash'></i></a>
-                <a id="table-delete-button" href="#"><i style="font-size:25px;" class='bx bx-history'></i></a>
-              </div>
+              <a id="table-edit-button">
+                <i style="font-size:25px;" class='bx bxs-edit edit_button'></i>
+                </i></a>
+              <a id="table-delete-button">
+                <i style="font-size:25px;" class='bx bx-trash del_button'>
+                </i></a>
+              <a id="table-delete-button">
+                <i style="font-size:25px;" class='bx bx-history'>
+                </i></a>
+            </div>
           </div>
-          
+
         </div>
         <!-- footer bảng -->
         <div class="management_invoi_footer">
@@ -284,125 +290,125 @@
       </div>
     </div>
 
-</div>
-<div id="overlay3" class="overlay3"></div>
-<div class="additem">
-  <h4>Add Supplier</h4>
-  <div class="additem-employee">
+  </div>
+  <div id="overlay3" class="overlay3"></div>
+  <div class="additem">
+    <h4>Add Supplier</h4>
+    <div class="additem-employee">
       <div class="invoice-row">
-          <div class="invoice-item invoice-customer-id">
-              <label for="customer-id">Supplier ID:</label>
-              <input type="text" id="customer-id" name="customer-id">
-          </div>
-          <div class="invoice-item invoice-customer-name">
-              <label for="customer-name">Supplier name:</label>
-              <input disabled type="text" id="customer-name" name="customer-name">
-          </div>
+        <div class="invoice-item invoice-customer-id">
+          <label for="customer-id">Supplier ID:</label>
+          <input type="text" id="customer-id" name="customer-id">
+        </div>
+        <div class="invoice-item invoice-customer-name">
+          <label for="customer-name">Supplier name:</label>
+          <input disabled type="text" id="customer-name" name="customer-name">
+        </div>
       </div>
       <div class="invoice-row">
         <div class="invoice-item invoice-customer-id">
-            <label for="customer-id">Address:</label>
-            <input type="text" id="customer-id" name="customer-id">
+          <label for="customer-id">Address:</label>
+          <input type="text" id="customer-id" name="customer-id">
         </div>
         <div class="invoice-item invoice-customer-name">
-            <label for="customer-name">Phone number:</label>
-            <input disabled type="text" id="customer-name" name="customer-name">
+          <label for="customer-name">Phone number:</label>
+          <input disabled type="text" id="customer-name" name="customer-name">
         </div>
-    </div>
-  </div>
-  <div class="additem-footer">
-      <div class="delete-row-confirm">
-          <button id="additem-delete-yes" class="button-icon" style="background-color: var(--notify);">
-              <span>Yes</span>
-          </button>
-          <button id="additem-delete-no" class="button-icon" style="background-color: var(--main-color-2);">
-              <span>No</span>
-          </button>
       </div>
+    </div>
+    <div class="additem-footer">
+      <div class="delete-row-confirm">
+        <button id="additem-delete-yes" class="button-icon" style="background-color: var(--notify);">
+          <span>Yes</span>
+        </button>
+        <button id="additem-delete-no" class="button-icon" style="background-color: var(--main-color-2);">
+          <span>No</span>
+        </button>
+      </div>
+    </div>
   </div>
-</div>
-<div id="delete-row" class="delete-row">
-  <h3>Bạn có chắc không?</h3>
-  <div class="delete-row-confirm">
-    <button id="delete-yes" class="button-icon" style="background-color: var(--notify);">
-      <span>Yes</span>
-    </button>
-    <button id="delete-no" class="button-icon" style="background-color: var(--main-color-2);">
-      <span>No</span>
-    </button>
-  </div>
-
-</div>
-
-<div class="edit-row" id="edit-row">
-  <div class="name-edit">
-    <h2>Supplier edit</h2>
-  </div>
-  <div class="❤">
-    <div class="list-edit-item">
-      <span class="">Name</span>
-      <input type="text">
-    </div>
-    <div class="list-edit-item">
-      <span class="">Birthday</span>
-      <input type="date" id="birthday" name="birthday">
-    </div>
-    <div class="list-edit-item">
-      <span class="">Adress</span>
-      <input type="text">
-    </div>
-    <div class="list-edit-item">
-      <span class="">Position</span>
-      <select name="" id="name">
-        <option value="volvo">kg</option>
-        <option value="saab">m</option>
-        <option value="saab">box</option>
-      </select>
-    </div>
-    <div class="list-edit-item">
-      <span class="">Name</span>
-      <input type="text">
-    </div>
-    <div class="list-edit-item">
-      <span class="">Name</span>
-      <input type="text">
-    </div>
-    <div class="list-edit-item">
-      <span class="">Name</span>
-      <input type="text">
-    </div>
-    <div class="list-edit-item">
-      <span class="">Name</span>
-      <input type="text">
-    </div>
-    <div class="list-edit-item">
-      <span class="">Name</span>
-      <input type="text">
-    </div>
-    <div class="list-edit-item">
-      <span class="">Name</span>
-      <input type="text">
-    </div>
-    <div class="list-edit-item">
-      <span class="">Name</span>
-      <input type="text">
+  <div id="delete-row" class="delete-row">
+    <h3>Bạn có chắc không?</h3>
+    <div class="delete-row-confirm">
+      <button id="delete-yes" class="button-icon" style="background-color: var(--notify);">
+        <span>Yes</span>
+      </button>
+      <button id="delete-no" class="button-icon" style="background-color: var(--main-color-2);">
+        <span>No</span>
+      </button>
     </div>
 
   </div>
-  <div class="options">
-    <button id="delete-yes-option" class="button-icon option"
-      style="background-color: var(--notify);height: 35px; margin-right: 20px;">
-      <span>Yes</span>
-    </button>
-    <button id="delete-no-option" class="button-icon option"
-      style="background-color: var(--main-color-2); height: 35px;">
-      <span>No</span>
-    </button>
-  </div>
-</div>
 
-<script src="../js/menusc.js" async defer></script>
-<script src="../js/stock.js" async defer></script>
+  <div class="edit-row" id="edit-row">
+    <div class="name-edit">
+      <h2>Supplier edit</h2>
+    </div>
+    <div class="❤">
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Birthday</span>
+        <input type="date" id="birthday" name="birthday">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Adress</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Position</span>
+        <select name="" id="name">
+          <option value="volvo">kg</option>
+          <option value="saab">m</option>
+          <option value="saab">box</option>
+        </select>
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+      <div class="list-edit-item">
+        <span class="">Name</span>
+        <input type="text">
+      </div>
+
+    </div>
+    <div class="options">
+      <button id="delete-yes-option" class="button-icon option"
+        style="background-color: var(--notify);height: 35px; margin-right: 20px;">
+        <span>Yes</span>
+      </button>
+      <button id="delete-no-option" class="button-icon option"
+        style="background-color: var(--main-color-2); height: 35px;">
+        <span>No</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="../js/menusc.js" async defer></script>
+  <script src="../js/addsup.js" async defer></script>
 </body>
 
 </html>
