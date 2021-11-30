@@ -14,10 +14,10 @@ addsym.onclick = function () {
     <input type="text" name="" id="">\
   </div>\
   <div class="item">\
-    <input type="text" name="" id="">\
+    <input type="number" value="1" name="" id="">\
   </div>\
   <div class="item">\
-    <input type="number" name="" id="">\
+    <input type="number" value="" name="" id="">\
   </div>';
   addsym.before(items);
   warp_items.scrollTop = warp_items.scrollHeight;
