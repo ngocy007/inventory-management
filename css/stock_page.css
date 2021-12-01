@@ -1,6 +1,8 @@
 .view-stock {
   padding: 50px 60px;
+  background-color: var(--bg-content-page);
 }
+
 .view-stock-table {
   width: 100%;
   display: flex;
@@ -43,7 +45,10 @@
   display: grid;
   grid-template-columns: 1fr 3fr 1fr 1fr 2fr 1fr;
   font-size: 20px;
-  background-color: var(--main-color-2);
+  padding: 25px 0;
+  place-items: center;
+  font-size: 16px;
+  color: #717274;
 }
 .stock-table-headr .title {
   border: 1px solid black;
@@ -52,7 +57,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--secondary-color);
+  color: #717274;
+  border: none;
 }
 .stock-table-body {
   width: 100%;
@@ -66,6 +72,13 @@
   grid-template-columns: 1fr 3fr 1fr 1fr 2fr 1fr;
   font-size: 20px;
   width: 100%;
+  padding: 15px 0;
+  place-items: center;
+  background-color: var(--secondary-color);
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 1px solid var(--hover-background);
 }
 .stock-table-body .row .title:last-child {
   display: flex;
@@ -79,6 +92,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 .stock-table-headr .table-foot {
   width: 100%;
