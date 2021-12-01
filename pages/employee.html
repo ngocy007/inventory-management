@@ -287,8 +287,8 @@
                 <div class="credit">2021 by Ý, Thọ, Đạt from Nhóm 5</div>
             </div>
         </div>
-
     </div>
+    <!-- add item -->
     <div id="overlay3" class="overlay3"></div>
     <div class="additem">
         <h4>Add Employee</h4>
@@ -355,6 +355,7 @@
             </div>
         </div>
     </div>
+    <!--anount !-->
     <div id="delete-row" class="delete-row">
         <h3>Bạn có chắc không?</h3>
         <div class="delete-row-confirm">
@@ -369,69 +370,68 @@
     </div>
 
     <div class="edit-row" id="edit-row">
-        <div class="name-edit">
-            <h2>Edit Eployee</h2>
-        </div>
-        <div class="❤">
-            <div class="list-edit-item">
-                <span class="">Name</span>
-                <input type="text">
+        <h4>Edit Employee</h4>
+        <div class="additem-employee">
+            <div class="invoice-row">
+                <div class="invoice-item invoice-customer-id">
+                    <label for="customer-id">Employee id:</label>
+                    <input type="text" id="customer-id" name="customer-id">
+                </div>
+                <div class="invoice-item invoice-customer-name">
+                    <label for="customer-name">Employee name:</label>
+                    <input disabled type="text" id="customer-name" name="customer-name">
+                </div>
             </div>
-            <div class="list-edit-item">
-                <span class="">Birthday</span>
-                <input type="date" id="birthday" name="birthday">
-            </div>
-            <div class="list-edit-item">
-                <span class="">Adress</span>
-                <input type="text">
-            </div>
-            <div class="list-edit-item">
-                <span class="">Position</span>
-                <select name="" id="name">
-                    <option value="volvo">kg</option>
-                    <option value="saab">m</option>
-                    <option value="saab">box</option>
-                </select>
-            </div>
-            <div class="list-edit-item">
-                <span class="">Name</span>
-                <input type="text">
-            </div>
-            <div class="list-edit-item">
-                <span class="">Name</span>
-                <input type="text">
-            </div>
-            <div class="list-edit-item">
-                <span class="">Name</span>
-                <input type="text">
-            </div>
-            <div class="list-edit-item">
-                <span class="">Name</span>
-                <input type="text">
-            </div>
-            <div class="list-edit-item">
-                <span class="">Name</span>
-                <input type="text">
-            </div>
-            <div class="list-edit-item">
-                <span class="">Name</span>
-                <input type="text">
-            </div>
-            <div class="list-edit-item">
-                <span class="">Name</span>
-                <input type="text">
-            </div>
+            <div class="invoice-row">
+                <div class="invoice-item invoice-employee">
+                    <label for="cars">Gender:</label><br>
+                    <select name="cars" id="cars">
+                        <option value="">Choice Gender</option>
+                        <option value="1">Man</option>
+                        <option value="2">Woman</option>
+                    </select>
+                </div>
+                <div class="invoice-item invoice-date">
+                    <label for="date">Birthday:</label>
+                    <input type="date" id="date" name="date">
+                </div>
 
+            </div>
+            <div class="invoice-row">
+                <div class="invoice-item invoice-customer-id">
+                    <label for="customer-id">Adress:</label>
+                    <input type="text" id="customer-id" name="customer-id">
+                </div>
+                <div class="invoice-item invoice-customer-name">
+                    <label for="customer-name">Phone number:</label>
+                    <input type="text" id="customer-name" name="customer-name">
+                </div>
+            </div>
+            <div class="invoice-row">
+                <div class="invoice-item invoice-employee">
+                    <label for="cars">Position:</label><br>
+                    <select name="cars" id="cars">
+                        <option value="">Chose Position</option>
+                        <option value="1">Lao công</option>
+                        <option value="2">Nhân viên bán hàng</option>
+                        <option value="3">Giám đốc</option>
+                    </select>
+                </div>
+                <div class="invoice-item invoice-customer-id">
+                    <label for="customer-id">Salary:</label>
+                    <input type="text" id="customer-id" name="customer-id">
+                </div>
+            </div>
         </div>
-        <div class="options">
-            <button id="delete-yes-option" class="button-icon option"
-                style="background-color: var(--notify);height: 35px; margin-right: 20px;">
-                <span>Yes</span>
-            </button>
-            <button id="delete-no-option" class="button-icon option"
-                style="background-color: var(--main-color-2); height: 35px;">
-                <span>No</span>
-            </button>
+        <div class="additem-footer">
+            <div class="delete-row-confirm">
+                <button id="additem-delete-yes" class="button-icon" style="background-color: var(--notify);">
+                    <span>Yes</span>
+                </button>
+                <button id="additem-delete-no" class="button-icon" style="background-color: var(--main-color-2);">
+                    <span>No</span>
+                </button>
+            </div>
         </div>
     </div>
 
