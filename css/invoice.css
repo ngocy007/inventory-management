@@ -1,8 +1,8 @@
-.invoice-form-head{
-    padding: 40px;
+.invoice-form-head {
+  padding: 40px;
 }
-.invoice-form{
-  background-color: #F6F8FA;
+.invoice-form {
+  background-color: #f6f8fa;
   display: none;
   z-index: 999;
   width: 50%;
@@ -12,28 +12,27 @@
   left: 50%;
   transform: translate(-50%, -100%);
 }
-.invoice-row{
-    display: flex;
+.invoice-row {
+  display: flex;
 }
 .invoice-item input,
-.invoice-item select{
+.invoice-item select {
   font-size: 16px;
-  background-color: #F6F8FA;
+  background-color: #f6f8fa;
   border: none;
   outline: none;
   width: 100%;
   border-bottom: 2px solid var(--main-color-2);
 }
-.invoice-item{
-    width: 50%;
-    padding: 20px 40px;
+.invoice-item {
+  width: 50%;
+  padding: 20px 40px;
 }
 /* add item */
 .additem {
   width: 100%;
   height: 300px;
-  background-color: #F6F8FA;
-
+  background-color: #f6f8fa;
 }
 .additem .additem-body .warp-items {
   overflow-y: scroll;
@@ -79,7 +78,7 @@
   padding-left: 5px;
 }
 
-.invoice-row-total{
+.invoice-row-total {
   flex-direction: column;
   display: flex;
   align-items: end;
@@ -92,7 +91,6 @@
   padding: 20px 20px;
 }
 .button-icon {
-  --ui-background: #5f50f1;
   padding: 15px 30px;
   border-radius: 50px;
   color: white;

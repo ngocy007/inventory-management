@@ -76,7 +76,7 @@
       <!-- báo cáo -->
       <li>
         <a href="../pages/report.html">
-          <i class='bx bxs-report' ></i>
+          <i class='bx bxs-report'></i>
           <span class="link_name">Report</span>
         </a>
         <span class="tooltips">Report</span>
@@ -84,7 +84,7 @@
       <!-- nhân viên -->
       <li>
         <a href="../pages/employee.html">
-          <i class='bx bxs-face' ></i>
+          <i class='bx bxs-face'></i>
           <span class="link_name">Employee</span>
         </a>
         <span class="tooltips">Employee</span>
@@ -121,7 +121,7 @@
     <ul class="menu">
       <!-- menu bên trái -->
       <div class="menu-left">
-        <a href="#" class="menu-title">User</a>
+        <a href="#" class="menu-title">BILL</a>
       </div>
       <!-- menu ben phải -->
       <div class="menu-right">
@@ -350,104 +350,107 @@
           </div>
         </div>
       </div>
-    <div id="overlay3" class="overlay3"></div>
+      <div id="overlay3" class="overlay3"></div>
 
       <!-- form invoice -->
       <div class="invoice-form" id="invoice_form">
         <div class="invoice-form-head">
-            <h1>New invoice</h1>
+          <h1>New invoice</h1>
         </div>
         <div class="invoice-row">
-            <div class="invoice-item invoice-date">
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date">
-            </div>
-            <div class="invoice-item invoice-employee">
-                <label for="cars">Employee:</label><br>
-                <select name="cars" id="cars">
-                    <option value="">Chọn nhân viên</option>
-                    <option value="1">Thọ</option>
-                    <option value="2">Đạt</option>
-                    <option value="3">Ý</option>
-                </select>
-            </div>
+          <div class="invoice-item invoice-date">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div class="invoice-item invoice-employee">
+            <label for="cars">Employee:</label><br>
+            <select name="cars" id="cars">
+              <option value="">Chọn nhân viên</option>
+              <option value="1">Thọ</option>
+              <option value="2">Đạt</option>
+              <option value="3">Ý</option>
+            </select>
+          </div>
         </div>
         <div class="invoice-row">
-            <div class="invoice-item invoice-customer-id">
-                <label for="customer-id">Customer id:</label>
-                <input type="text" id="customer-id" name="customer-id">
-            </div>
-            <div class="invoice-item invoice-customer-name">
-                <label for="customer-name">Customer name:</label>
-                <input disabled type="text" id="customer-name" name="customer-name">
-            </div>
+          <div class="invoice-item invoice-customer-id">
+            <label for="customer-id">Customer id:</label>
+            <input type="text" id="customer-id" name="customer-id">
+          </div>
+          <div class="invoice-item invoice-customer-name">
+            <label for="customer-name">Customer name:</label>
+            <input type="text" id="customer-name" name="customer-name">
+          </div>
         </div>
         <div class="invoice-row">
-            <div class="invoice-item invoice-customer-phone">
-                <label for="customer-phone">Customer phone:</label>
-                <input disabled type="number" id="customer-phone" name="customer-phone">
-            </div>
-            <div class="invoice-item invoice-customer-gender">
-                <label for="customer-gender">Customer gender:</label><br>
-                <select name="customer-gender" id="customer-gender">
-                    <option value="">Choice gender</option>
-                    <option value="1">Male</option>
-                    <option value="2">Female</option>
-                    <option value="3">Don't say</option>
-             </select>
-            </div>
+          <div class="invoice-item invoice-customer-phone">
+            <label for="customer-phone">Customer phone:</label>
+            <input type="number" id="customer-phone" name="customer-phone">
+          </div>
+          <div class="invoice-item invoice-customer-gender">
+            <label for="customer-gender">Customer gender:</label><br>
+            <select name="customer-gender" id="customer-gender">
+              <option value="">Choice gender</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Don't say</option>
+            </select>
+          </div>
         </div>
         <div class="invoice-additem">
-            <div class="invoice-item additem">
-                <div class="additem-body">
-                    <div class="titles">
-                        <div class="title"> STT </div>
-                        <div class="title"> MAHH </div>
-                        <div class="title"> Số lượng </div>
-                        <div class="title"> Giá </div>
-                    </div>
-                    <div class="warp-items">
-                        <div class="items">
-                            <div class="item"></div>
-                            <div class="item">
-                                <input type="text" name="" id="">
-                            </div>
-                            <div class="item">
-                                <input type="number" value="1" name="" id="">
-                            </div>
-                            <div class="item">
-                                <input type="number" value="" name="" id="">
-                            </div>
-                        </div>
-                        <div class="addsym">
-                            <i class='bx bx-plus'></i> <span>ADD LINE</span>
-                        </div>
-                    </div>
+          <div class="invoice-item additem">
+            <div class="additem-body">
+              <div class="titles">
+                <div class="title"> STT </div>
+                <div class="title"> MAHH </div>
+                <div class="title"> Số lượng </div>
+                <div class="title"> Giá </div>
+              </div>
+              <div class="warp-items">
+                <div class="items">
+                  <div class="item"></div>
+                  <div class="item">
+                    <input type="text" name="" id="">
+                  </div>
+                  <div class="item">
+                    <input type="number" value="1" name="" id="">
+                  </div>
+                  <div class="item">
+                    <input type="number" value="" name="" id="">
+                  </div>
+                  <div class="item" class="">
+                    <i class="bx bx-trash deleIv"></i>
+                  </div>
                 </div>
+                <div class="addsym">
+                  <i class='bx bx-plus'></i> <span>ADD LINE</span>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-            
-        
+
+
         <div class="invoice-row-total">
-            <!-- invoice total -->
-            <div class="invoice-item invoice-subtotal">
-                <span>Subtotal: </span><span id="subtotal">1</span>
-            </div>
-            <div class="invoice-item invoice-total">
-                <span>Total: </span><span id="total">1</span>
-            </div>
+          <!-- invoice total -->
+          <div class="invoice-item invoice-subtotal">
+            <span>Subtotal: </span><span id="subtotal">1</span>
+          </div>
+          <div class="invoice-item invoice-total">
+            <span>Total: </span><span id="total">1</span>
+          </div>
         </div>
-<div class="options">
-      <button id="invoice_form_yes" class="button-icon option"
-        style="background-color: var(--notify);height: 35px; margin-right: 20px;">
-        <span>Yes</span>
-      </button>
-      <button id="invoice_form_no" class="button-icon option"
-        style="background-color: var(--main-color-2); height: 35px;">
-        <span>No</span>
-      </button>
-    </div>
-    </div>
+        <div class="options">
+          <button id="invoice_form_yes" class="button-icon option"
+            style="background-color: var(--notify);height: 35px; margin-right: 20px;">
+            <span>Yes</span>
+          </button>
+          <button id="invoice_form_no" class="button-icon option"
+            style="background-color: var(--main-color-2); height: 35px;">
+            <span>No</span>
+          </button>
+        </div>
+      </div>
       <!-- Footer -->
       <div class="home-layout-item footer-item">
         <div class="contact">
