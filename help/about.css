@@ -1,0 +1,84 @@
+.content_about{
+    padding: 220px 0 220px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.linkpage{
+    width: 274px;
+    padding-left: 88px;
+}
+.link_about{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border-top: 1px solid #000;
+    padding-top: 6px;
+}
+.linkpage ul li a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4F4F4F;
+}
+.linkpage ul li{
+    list-style-type: none;
+    padding-bottom: 12px;
+}
+.content > h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.content > h3{
+    color: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 36px 0 12px 0;
+}
+.content ul li{
+    margin-left: 25px;
+}
+.content{
+    padding-right: 218px;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 1176px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4F4F4F;
+}
+.link_current{
+    margin-left: 14px;
+    color: #000000 !important;
+}
+table, td, th {
+    border: 1px solid #C4C4C4;
+}
+  
+table {
+    table-layout: auto;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+.tab{
+    padding-left: 43px;
+}

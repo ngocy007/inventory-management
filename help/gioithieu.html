@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Trang chủ quảng lý kho hàng</title>
+  <meta name="description" content="webstore quản lí kho hàng">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--khai báo css-->
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/narbar.css">
+  <link rel="stylesheet" href="../css/mobile.css">
+  <link rel="stylesheet" href="../css/home_content.css">
+  <link rel="stylesheet" href="../css/calen.css">
+  <link rel="stylesheet" href="about.css">
+
+</head>
+
+<body id="body">
+
+  <div class="overlay" id="ov"></div>
+  <div class="overlay2" id="ov2"></div>
+  <div class="sidebar" id="sb">
+    <div class="logo_content">
+      <div class="logo">
+        <i class='bx bx-code-alt'></i>
+        <div class="logo_name">Nhóm 5</div>
+      </div>
+      <i class='bx bx-menu' id='btn'></i>
+      <i class='bx bx-menu' id='btns'></i>
+    </div>
+    <ul class="nav_list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Search..">
+        <span class="tooltips">Search</span>
+      </li>
+      <!-- trang chu -->
+      <li>
+        <a href="../index.html">
+          <i class='bx bxs-dashboard'></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <span class="tooltips">Dashboard</span>
+      </li>
+      <!-- Quản lý hoá đơn -->
+      <li>
+        <a href="../pages/Management_Invoices.html">
+          <i class='bx bx-list-ol'></i>
+          <span class="link_name">Invoices</span>
+        </a>
+        <span class="tooltips">Invoices</span>
+      </li>
+      <!-- Nhà cung cấp -->
+      <li>
+        <a href="../pages/supplier.html">
+          <i class='bx bxs-store-alt'></i>
+          <span class="link_name">Supplier</span>
+        </a>
+        <span class="tooltips">Supplier</span>
+      </li>
+      <!-- Kho hàng -->
+      <li>
+        <a href="../pages/stock.html">
+          <i class='bx bxs-data'></i>
+          <span class="link_name">Stock</span>
+        </a>
+        <span class="tooltips">Stock</span>
+      </li>
+      <!-- báo cáo -->
+      <li>
+        <a href="../pages/report.html">
+          <i class='bx bxs-report' ></i>
+          <span class="link_name">Report</span>
+        </a>
+        <span class="tooltips">Report</span>
+      </li>
+      <!-- nhân viên -->
+      <li>
+        <a href="../pages/employee.html">
+          <i class='bx bxs-face' ></i>
+          <span class="link_name">Employee</span>
+        </a>
+        <span class="tooltips">Employee</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-heart'></i>
+          <span class="link_name">Saved</span>
+        </a>
+        <span class="tooltips">Saved</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="link_name">Settings</span>
+        </a>
+        <span class="tooltips">Settings</span>
+      </li>
+    </ul>
+    <div class="profile-content">
+      <div class="profile">
+        <div class="profile_details">
+          <img src="../img/avata.jpg" alt="ảnh đại diẹn">
+          <div class="name_job">
+            <div class="name">Tên User</div>
+            <div class="job">Role</div>
+          </div>
+        </div>
+        <i class='bx bx-log-out' id="log_out"></i>
+      </div>
+    </div>
+  </div>
+  <div class="home_content" id="home_content">
+    <ul class="menu">
+      <!-- menu bên trái -->
+      <div class="menu-left">
+        <a href="#" class="menu-title">Dashboard</a>
+      </div>
+      <!-- menu ben phải -->
+      <div class="menu-right">
+        <li class="menu-item">
+          <a href="#" class="menu-link notify">
+            <i class='bx bxs-bell'></i>
+          </a>
+          <!-- hiện menu thông báo -->
+          <div class="notify-menu">
+            <div class="notify-menu-headr">
+              <h3>Notification</h3>
+              <i class='bx bx-cog'></i>
+            </div>
+            <div class="notify-menu-contant">
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+              <div class="notify-menu-contant-item">
+                <div class="item-user">
+                </div>
+                <div class="item-content">
+                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, quam ea
+                  </h3>
+                  <span class="item-content-time">3 giờ trước</span>
+                </div>
+                <div class="item-img">
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <i class='bx bx-menu'></i>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <i class='bx bxs-user'></i>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">
+            <i class='bx bx-cog'></i>
+          </a>
+        </li>
+      </div>
+      <!-- reponsive  -->
+      <div class="menu-right-reponsive">
+        <a href="#" class="menu-link-notify">
+          <i class='bx bxs-chevron-left'></i>
+        </a>
+      </div>
+    </ul>
+
+
+
+    <!-- những phần còn lại code zô -->
+    <div class="content_about">
+        <div class="linkpage">
+            <p class="link_about">TRỢ GIÚP SỬ DỤNG HỆ THỐNG</p><br>
+            <ul>
+                <li class="link_current"><a href="gioithieu.html">Giới thiệu</a></li>
+                <li ><a href="hdsudung.html">Hướng dẫn sử dụng cơ bản</a></li>
+            </ul>     
+        </div>
+        <div class="content">
+            <h2>GIỚI THIỆU</h2>
+            <p>Cửa hàng “Bách Hóa” được thành lập vào năm 2006, cửa hàng nằm tại “Tân Xương 1- Suối Cát - Cam Lâm - Khánh Hòa”, hàng hóa chính của cửa hàng là vật dụng điện tử và vật liệu xây dựng, cửa hàng hoạt động với bộ phận quản lý kho hàng chuyên kiểm tra cập nhật thông tin của hàng hóa, bộ phận kế toán ghi chép giá và thu chi cho hàng hóa, bộ phận chăm sóc khách hàng chuyên sửa chữa bảo hành các vật dụng,... 
+            <br>
+            Cửa hàng đã phát triển rất đáng kể từ cửa hàng nhỏ đã phát triển đến cửa hàng lớn với quy mô lớn hơn, phát triển thêm kho hàng cho từng loại mặt hàng, nhân lực chủ yếu của cửa hàng là thành viên trong gia đình, hiện tại dù đang tình hình Covid-19 việc kinh doanh của cửa hàng cũng đi vào ổn định</p>
+        </div>
+    </div>
+    
+
+  </div>
+  <script src="../js/menusc.js" async defer></script>
+  <script src="../js/calen.js" async defer></script>
+</body>
+
+</html>
