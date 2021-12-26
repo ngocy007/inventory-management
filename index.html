@@ -11,13 +11,15 @@
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
   <!--khai báo css-->
+  <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/sidebar.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/variables.css">
+
   <link rel="stylesheet" href="css/narbar.css">
   <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/home_content.css">
   <link rel="stylesheet" href="css/calen.css">
+  <link rel="stylesheet" href="css/change-color.css">
 </head>
 
 <body id="body">
@@ -74,16 +76,26 @@
       <!-- báo cáo -->
       <li>
         <a href="pages/report.html">
+<<<<<<< HEAD
           <i class='bx bxs-report' ></i>
           <span class="link_name">Báo cáo</span>
+=======
+          <i class='bx bxs-report'></i>
+          <span class="link_name">Report</span>
+>>>>>>> 4cb0dba61a1b3a781cd6972ad8f3e96d91d3daf4
         </a>
         <span class="tooltips">Báo cáo</span>
       </li>
       <!-- nhân viên -->
       <li>
         <a href="pages/employee.html">
+<<<<<<< HEAD
           <i class='bx bxs-face' ></i>
           <span class="link_name">Nhân viên</span>
+=======
+          <i class='bx bxs-face'></i>
+          <span class="link_name">Employee</span>
+>>>>>>> 4cb0dba61a1b3a781cd6972ad8f3e96d91d3daf4
         </a>
         <span class="tooltips">Nhân viên</span>
       </li>
@@ -95,7 +107,7 @@
         <span class="tooltips">Trợ giúp</span>
       </li>
       <li>
-        <a href="#">
+        <a id="menu-cl">
           <i class='bx bx-cog'></i>
           <span class="link_name">Cài đặt</span>
         </a>
@@ -114,6 +126,35 @@
         <i class='bx bx-log-out' id="log_out"></i>
       </div>
     </div>
+  </div>
+  <div class="change-color">
+    <div class="menu-color">
+      <div class="row">
+        <label for="main-color">chọn màu chính</label>
+        <input type="color" name="" id="main-color" value="#11101d">
+      </div>
+
+      <div class="row">
+        <label for="second-color">chọn màu phụ</label>
+        <input type="color" name="" id="second-color" value="#fcfcfc">
+      </div>
+
+      <div class="row">
+        <label for="second-color">chọn màu nar</label>
+        <input type="color" name="" id="nar-color" value="#2196f3">
+      </div>
+
+      <div class="row">
+        <label for="main-color">chọn màu nền</label>
+        <input type="color" name="" id="bg-content-page" value="#eeeeee">
+      </div>
+
+      <div class="row">
+        <button id="click-menu">bấm</button>
+        <button id="quit-menu">quit</button>
+      </div>
+    </div>
+
   </div>
   <div class="home_content" id="home_content">
     <ul class="menu">
@@ -382,9 +423,12 @@
       </div>
     </div>
 
+
+
   </div>
   <script src="js/menusc.js" async defer></script>
   <script src="js/calen.js" async defer></script>
+  <script src="js/change.js" async defer></script>
 </body>
 
 </html>

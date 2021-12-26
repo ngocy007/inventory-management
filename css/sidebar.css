@@ -227,4 +227,5 @@
 }
 .sidebar.active .profile #log_out {
   background: none;
+  grid-template-columns: 2;
 }

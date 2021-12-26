@@ -1,0 +1,31 @@
+.change-color {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 400px;
+  background-color: var(--secondary-color);
+}
+.menu-color .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 100px;
+  margin-bottom: 20px;
+}
+.menu-color .row button {
+  padding: 10px 30px;
+}

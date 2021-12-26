@@ -225,3 +225,12 @@
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
+.warp-items .items {
+  position: relative;
+}
+.warp-items .items .item:last-child {
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
